@@ -22,8 +22,7 @@ public class CustomerController {
     }
 
     @PostMapping
-    public void addCustomer(@RequestBody Customer customer) {
-        service.addCustomer(customer);
+    public void addCustomer(@RequestBody Customer customer) {service.addCustomer(customer);
     }
 
 }

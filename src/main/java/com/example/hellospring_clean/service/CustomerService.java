@@ -15,8 +15,7 @@ public class CustomerService {
         this.repository = repository;
     }
 
-    public List<Customer> getAllCustomers() {
-        return repository.findAll();
+    public List<Customer> getAllCustomers() {return repository.findAll();
     }
 
     public void addCustomer(Customer customer) {
