@@ -5,6 +5,7 @@ public class Customer {
     private Long id;
     private String name;
     private String email;
+    private String memo;
 
     public Customer(Long id, String name, String email) {
         this.id = id;
@@ -15,6 +16,14 @@ public class Customer {
     public Long getId() {return id;}
     public String getName() {return name;}
     public String getEmail() {return email;}
+
+    public String getMemo() {
+        return memo;
+    }
+
+    public void setMemo(String memo) {
+        this.memo = memo;
+    }
 }
 
 
