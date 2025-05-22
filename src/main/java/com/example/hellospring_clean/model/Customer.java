@@ -5,7 +5,7 @@ public class Customer {
     private Long id;
     private String name;
     private String email;
-    private String memo;
+    private String memo ="Default memo";
 
     public Customer(Long id, String name, String email) {
         this.id = id;
@@ -23,6 +23,16 @@ public class Customer {
 
     public void setMemo(String memo) {
         this.memo = memo;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", memo='" + memo + '\'' +
+                '}';
     }
 }
 
